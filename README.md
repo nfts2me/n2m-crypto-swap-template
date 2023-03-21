@@ -7,14 +7,10 @@ An embedded widget to allow anyone to swap tokens within their website or app.
 
 ## Demo
 
-* Live demo: https://tools.nfts2me.com/demo
-
-* Demo video:
-
 [n2m-swap-widget-demo.webm](https://user-images.githubusercontent.com/109629895/226582688-2f8c79b7-1e6a-487a-8353-ac5bada3fa33.webm)
 
 
-* Full demo video on YouTube:
+* Full demo video:
 https://www.youtube.com/watch?v=9lnukQYoWA8
 
 The REPLIT TEMPLATE for a Next.js Application embedding the widget can be found here:
@@ -97,7 +93,7 @@ As described above we've used NextJS framework as the base, levereging on Alchem
 There were several issues that we had to deal with to build the crypto swap, that we'll example in their own subsections.
 
 ### Balances
-We wanted to show the user the balances of all of the ERC-20 he owned. To do that without using Alchemy, we should check an ERC-20 list and check all of them individually. Still, we couldn't assure that we were missing some of them. `alchemy_getTokenBalances` was very handy to fetch all user erc20 balances at once.
+We wanted to show the user the balances of all of the ERC-20 he owned. To do that without using Alchemy, we should check an ERC-20 list and check all of them individually. Still, we couldn't assure that we were missing some of them. [`alchemy_getTokenBalances`](https://docs.alchemy.com/reference/alchemy-gettokenbalances) was very handy to fetch all user erc20 balances at once.
 
 As we're using NextJS, we decided to use the hook "useSWR" to fetch the balances, which refetches as needed, and manually revalidate when a swap was done. 
 
@@ -116,7 +112,7 @@ If everything goes well, we allow the user to do the actual swap. We leverage wa
 
 - Built in Partnership with [Alchemy](https://www.alchemy.com/) and [Replit](https://replit.com/) under the [Bounty](https://replit.com/bounties/@Arjun-Alchemy/swap-crypto-widget)
 
-- `Alchemy SDK` was very handy to fetch all user erc20 balances at once as well as the user allowance if needed. In the case of using a custom ERC20, it gave us not only the token information, but also a handy logo to show it. Regular Alchemy API was also used to query the blockchain using Wagmi. The used functions were `alchemy_getTokenBalances` ,`alchemy_getTokenMetadata` and `alchemy_getTokenAllowance`.
+- `Alchemy SDK` was very handy to fetch all user erc20 balances at once as well as the user allowance if needed. In the case of using a custom ERC20, it gave us not only the token information, but also a handy logo to show it. Regular Alchemy API was also used to query the blockchain using Wagmi. The used functions were [`alchemy_getTokenBalances`](https://docs.alchemy.com/reference/alchemy-gettokenbalances) ,[`alchemy_getTokenMetadata`](https://docs.alchemy.com/reference/alchemy-gettokenmetadata) and [`alchemy_getTokenAllowance`](https://docs.alchemy.com/reference/alchemy-gettokenallowance).
 
 - This work has been done under the umbrella of [NFTs2Me](https://nfts2me.com/), a Digital Collectibles Toolkit to create, deploy and manage your NFT collection and minting page with custom subdomain for free, with No-code Art Generator, Token Gating, Credit Card Payments & much much more out of the box. 
 
