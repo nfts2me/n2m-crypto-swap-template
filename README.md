@@ -7,10 +7,13 @@ An embedded widget to allow anyone to swap tokens within their website or app.
 
 ## Demo
 
+* Live demo: https://tools.nfts2me.com/demo
+
+* Demo video:
 [n2m-swap-widget-demo.webm](https://user-images.githubusercontent.com/109629895/226582688-2f8c79b7-1e6a-487a-8353-ac5bada3fa33.webm)
 
 
-* Full demo video:
+* Full demo video on YouTube:
 https://www.youtube.com/watch?v=9lnukQYoWA8
 
 The REPLIT TEMPLATE for a Next.js Application embedding the widget can be found here:
