@@ -48,6 +48,13 @@ const Home: NextPage = () => {
 
                 </div>
               </nav>
+            </div>              
+            <div className="py-16 bg-black">
+              <iframe id='iframe-widget' src='https://tools.nfts2me.com/swap?widget=classic&bgColor=000000' style={{ height: "480px", width: "100%", border: "none" }}></iframe>
+            </div>
+
+            <div className="container flex flex-col mx-auto">
+
               <div className="mt-24 mb-32 flex flex-wrap md:flex-nowrap flex-row w-full space-x-8">
                 <h1 className="uppercase w-full md:w-2/3 font-black text-6xl">
                   Unleashing the Power of DEX: A Comprehensive Guide to Crypto Swaps
@@ -58,9 +65,6 @@ const Home: NextPage = () => {
               </div>
             </div>
 
-            <div className="py-16 bg-black">
-              <iframe id='iframe-widget' src='https://tools.nfts2me.com/swap?widget=classic&bgColor=000000' style={{ height: "480px", width: "100%", border: "none" }}></iframe>
-            </div>
           </div>
 
         </main>
@@ -70,3 +74,4 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
