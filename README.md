@@ -29,6 +29,7 @@ Introducing the **[N2M Crypto Swap Widget](https://tools.nfts2me.com/swap)**, a 
 - Arbitrum One
 - Ethereum Goerli Testnet
 - Polygon Mumbai Testnet
+- Ethereum Sepolia Testnet (supported by Alchemy but not yet by UniSwap and thus the crypto-swap)
 
 2. All wallets supported:
 - Metamask
